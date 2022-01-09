@@ -10,6 +10,6 @@ export const AppContainer = styled.main`
 
     background: ${(props) => props.theme.background};
     color: ${(props) => props.theme.color};
-    transition: background-color 0.8s linear, color 0.5s linear;
+    transition: background 0.8s linear, color 0.5s linear;
 
 `
