@@ -7,28 +7,35 @@ const lightTheme = {
         backgroundColor: "#151A69",
     },
     header: {
-        backgroundColor: "transparent",
+        backgroundColor: "white",
         color: "#000",
         buttonCurric: {
             textColor: "#151A69",
             border: "1px solid #151A69",
-            backgroundColor: "transparent",
+            backgroundColor: "white",
             boxShadow: "0 0 3px #141A69"
+        },
+        socialIcons: {
+            backgroundColor: "black",
         }
     }
 };
 
 const darkTheme = {
     color: "#D3D4E6",
-    background: "linear-gradient(to bottom, hsla(212,67%,36%,1) 0%,hsla(228,28%,50%,1) 100%)",
+    //background: "linear-gradient(to bottom, #3A0CA3,#693CB5)",
+    background: "#181818",
     header: {
-        backgroundColor: "transparent",
+        backgroundColor: "black",
         color: "#FFF",
         buttonCurric: {
             textColor: "#FFF",
             border: "1px solid #151A69",
-            backgroundColor: "transparent",
+            backgroundColor: "#151719",
             boxShadow: "0 0 3px #141A69"
+        },
+        socialIcons: {
+            backgroundColor: "white",
         }
     }
 };

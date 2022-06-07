@@ -6,6 +6,7 @@ export const AppContainer = styled.main`
     display: flex;
 
 
+
 // Abaixo passamos para as propriedades background-color e color as configurações de estilo definidas no arquivo theme.js e compartilhada pela props theme do componente <ThemeProvider>
 
     background: ${(props) => props.theme.background};
