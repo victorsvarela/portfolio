@@ -1,4 +1,3 @@
-import Navbar from "./Components/Navbar";
 import "./App.css";
 import { ThemeProvider } from "styled-components";
 import { useContext } from "react";
@@ -7,11 +6,8 @@ import { AppContainer } from "./Global/style";
 import { ThemeControlContext } from "./Providers/ThemeControl";
 import Routes from "./Routes";
 
-
 function App() {
-  // useState que armazena o tema atual da aplicação
-
-  const { currentTheme } = useContext(ThemeControlContext)
+  const { currentTheme } = useContext(ThemeControlContext);
 
   return (
     <>
@@ -20,7 +16,6 @@ function App() {
           <Routes />
         </AppContainer>
       </ThemeProvider>
-
     </>
   );
 }

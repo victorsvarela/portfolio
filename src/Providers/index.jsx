@@ -1,9 +1,12 @@
+import { MenuSelectControlProvider } from "./MenuSelectControl";
 import { ThemeControlProvider } from "./ThemeControl";
 
 const Providers = ({ children }) => {
   return (
     <>
-      <ThemeControlProvider>{children}</ThemeControlProvider>
+      <ThemeControlProvider>
+        <MenuSelectControlProvider>{children}</MenuSelectControlProvider>
+      </ThemeControlProvider>
     </>
   );
 };

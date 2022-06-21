@@ -1,5 +1,4 @@
 import { Route, Switch } from "react-router";
-import Navbar from "../Components/Navbar";
 import Home from "../Pages/Home";
 import React from "react";
 const Routes = () => {
