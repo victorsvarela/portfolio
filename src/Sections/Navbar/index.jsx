@@ -24,7 +24,7 @@ const NavBar = () => {
     MenuSelectControlContext
   );
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClickMenu = () => {
     setIsOpen(!isOpen);
