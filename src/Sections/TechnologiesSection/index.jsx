@@ -1,5 +1,5 @@
 const TechnologiesSection = () => {
-  return <p>AQUI É O Technologies PORRA</p>;
+  return <p>Technologies</p>;
 };
 
 export default TechnologiesSection;

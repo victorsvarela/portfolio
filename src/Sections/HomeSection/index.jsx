@@ -1,5 +1,5 @@
 const HomeSection = () => {
-  return <p>AQUI É O HOME PORRA</p>;
+  return <p>HOME</p>;
 };
 
 export default HomeSection;

@@ -1,5 +1,5 @@
 const AboutSection = () => {
-  return <p>AQUI É O ABOUT PORRA</p>;
+  return <p>ABOUT</p>;
 };
 
 export default AboutSection;

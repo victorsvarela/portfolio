@@ -5,6 +5,10 @@ export const HeaderNavbar = styled.header`
   padding: 5px 60px;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -15,9 +19,6 @@ export const Nav = styled.nav`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: #181818;
 
   @media (min-width: 769px) {
@@ -51,12 +52,13 @@ export const WrapperLogoNav = styled.div`
 
   @media (min-width: 769px) {
     padding-right: 20px;
+    margin-top: 0;
   }
 `;
 export const Logo = styled.p`
-  width: 100%;
+  width: max-content;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   font-size: ${(props) =>
     props.size === "small"
       ? "18px"
@@ -69,7 +71,6 @@ export const Logo = styled.p`
   }
 
   @media (min-width: 769px) {
-    width: 200px;
   }
 `;
 

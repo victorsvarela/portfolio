@@ -1,5 +1,5 @@
 const TalkToMeSection = () => {
-  return <p>AQUI É O TalkToMe PORRA</p>;
+  return <p>TalkToMe</p>;
 };
 
 export default TalkToMeSection;

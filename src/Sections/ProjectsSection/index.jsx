@@ -1,5 +1,5 @@
 const ProjectsSection = () => {
-  return <p>AQUI É O Projects PORRA</p>;
+  return <p>Projects</p>;
 };
 
 export default ProjectsSection;

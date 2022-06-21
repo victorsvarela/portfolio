@@ -12,8 +12,8 @@ import {
 
 import * as Style from "./style";
 import getItems from "./items";
-import HireButton from "../../Components/HireButton";
-import SwitchThemeModeButton from "../../Components/SwitchThemeModeButton";
+import HireButton from "../HireButton";
+import SwitchThemeModeButton from "../SwitchThemeModeButton";
 
 import { MenuSelectControlContext } from "../../Providers/MenuSelectControl";
 
