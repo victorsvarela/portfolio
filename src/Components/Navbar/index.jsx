@@ -74,7 +74,10 @@ const NavBar = () => {
               ) : (
                 <Style.WrapperMenuItem
                   id={item.id}
-                  onClick={() => handleChangeItemMenu(item.value)}
+                  onClick={() => {
+                    handleChangeItemMenu(item.value);
+                    handleClickMenu();
+                  }}
                 >
                   {item.label}
                 </Style.WrapperMenuItem>

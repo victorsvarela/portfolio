@@ -11,6 +11,8 @@ export const Button = styled.button`
   box-shadow: ${(props) => props.theme.header.buttonCurric.boxShadow};
   cursor: pointer;
   position: relative;
+  margin: 0 10px;
+
   :before {
     background: linear-gradient(to bottom right, #b5179e 20%, #4361ee 65%);
     content: "";
@@ -21,7 +23,7 @@ export const Button = styled.button`
     inset: 0;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
     width: auto;
   }
 `;

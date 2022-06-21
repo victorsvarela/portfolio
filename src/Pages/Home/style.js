@@ -12,10 +12,20 @@ export const HomePageSection = styled.section`
 `;
 
 export const CardApresentation = styled.section`
-  width: calc(100% - 120px);
+  width: calc(100% - 60px);
+
   margin: 0 60px;
   height: 80%;
   background-color: #2f334060;
   border-radius: 10px;
   box-sizing: border-box;
+
+  @media (min-width: 550px) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: 975px) {
+    margin-top: 100px;
+    width: calc(100% - 120px);
+  }
 `;

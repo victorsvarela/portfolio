@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const HeaderNavbar = styled.header`
-  display: flex;
-  padding: 5px 60px;
   align-items: center;
+  box-sizing: border-box;
+  display: flex;
   justify-content: space-between;
+  width: calc(100% - 60px);
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
+    width: calc(100% - 120px);
     display: none;
   }
 `;
@@ -20,12 +22,17 @@ export const Nav = styled.nav`
   align-items: center;
   box-sizing: border-box;
   background-color: #181818;
+  /* background-color: transparent; */
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
     display: flex;
     flex-direction: row;
     height: 80px;
     padding: 0 60px;
+    background-color: transparent;
   }
 `;
 export const ButtonChangeOpenCloseMenu = styled.div`
@@ -39,7 +46,7 @@ export const ButtonChangeOpenCloseMenu = styled.div`
     height: 30px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
     display: none;
   }
 `;
@@ -47,18 +54,20 @@ export const ButtonChangeOpenCloseMenu = styled.div`
 export const WrapperLogoNav = styled.div`
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: auto;
   margin-top: 40px;
+  width: calc(100% - 30px);
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
     padding-right: 20px;
     margin-top: 0;
   }
 `;
 export const Logo = styled.p`
-  width: max-content;
+  width: 100%;
   font-weight: 400;
-  text-align: left;
+
+  text-align: center;
   font-size: ${(props) =>
     props.size === "small"
       ? "18px"
@@ -70,7 +79,9 @@ export const Logo = styled.p`
     font-weight: 800;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
+    width: max-content;
+    text-align: left;
   }
 `;
 
@@ -81,8 +92,9 @@ export const WrapperMenuList = styled.ul`
   padding: 0;
   height: 300px;
   justify-content: space-around;
+  box-sizing: border-box;
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
     flex-direction: row;
     width: 600px;
     height: 60px;
@@ -96,8 +108,9 @@ export const WrapperMenuItem = styled.li`
   list-style-type: none;
   text-align: center;
   font-size: 15px;
+  white-space: nowrap;
 
-  @media (min-width: 769px) {
+  @media (min-width: 975px) {
     width: auto;
     margin: 0 10px;
   }
