@@ -36,40 +36,54 @@ const NavBar = () => {
   };
 
   return (
-    <Style.Nav isOpen={isOpen}>
-      <Style.ButtonCloseMenu onClick={() => handleClickMenu()}>
-        X
-      </Style.ButtonCloseMenu>
-      <Style.WrapperLogoNav>
-        <Style.Logo>
-          {`<Victor`}
-          <span>Varela</span>
-          {` />`}
-        </Style.Logo>
-      </Style.WrapperLogoNav>
-      <Style.WrapperMenuList>
-        {getItems.map((item) => (
-          <>
-            {item.id === 6 ? (
-              <SwitchThemeModeButton
-                id={item.id}
-                checked={checked}
-                onChange={handleChange}
-              />
-            ) : item.id === 7 ? (
-              <HireButton id={item.id}>Contrate</HireButton>
-            ) : (
-              <Style.WrapperMenuItem
-                id={item.id}
-                onClick={() => handleChangeItemMenu(item.value)}
-              >
-                {item.label}
-              </Style.WrapperMenuItem>
-            )}
-          </>
-        ))}
-      </Style.WrapperMenuList>
-    </Style.Nav>
+    <>
+      <Style.HeaderNavbar>
+        <Style.WrapperLogoNav>
+          <Style.Logo size="medium">
+            {`<Victor`}
+            <span>Varela</span>
+            {` />`}
+          </Style.Logo>
+        </Style.WrapperLogoNav>
+        <Style.ButtonChangeOpenCloseMenu onClick={() => handleClickMenu()}>
+          <HiMenuAlt3 />
+        </Style.ButtonChangeOpenCloseMenu>
+      </Style.HeaderNavbar>
+      <Style.Nav isOpen={isOpen}>
+        <Style.WrapperLogoNav>
+          <Style.ButtonChangeOpenCloseMenu onClick={() => handleClickMenu()}>
+            <MdClose />
+          </Style.ButtonChangeOpenCloseMenu>
+          <Style.Logo>
+            {`<Victor`}
+            <span>Varela</span>
+            {` />`}
+          </Style.Logo>
+        </Style.WrapperLogoNav>
+        <Style.WrapperMenuList>
+          {getItems.map((item) => (
+            <>
+              {item.id === 6 ? (
+                <SwitchThemeModeButton
+                  id={item.id}
+                  checked={checked}
+                  onChange={handleChange}
+                />
+              ) : item.id === 7 ? (
+                <HireButton id={item.id}>Contrate</HireButton>
+              ) : (
+                <Style.WrapperMenuItem
+                  id={item.id}
+                  onClick={() => handleChangeItemMenu(item.value)}
+                >
+                  {item.label}
+                </Style.WrapperMenuItem>
+              )}
+            </>
+          ))}
+        </Style.WrapperMenuList>
+      </Style.Nav>
+    </>
   );
 };
 
